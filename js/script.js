@@ -30,11 +30,11 @@ function openMenu() {
 		$("div.y").hide();
 		$("div.x").addClass("rotate30");
 		$("div.z").addClass("rotate150");
-	}, 100);
+	}, 50);
 	setTimeout(function() {
 		$("div.x").addClass("rotate45");
 		$("div.z").addClass("rotate135");
-	}, 180);
+	}, 70);
 }
 
 function closeMenu() {
@@ -51,11 +51,11 @@ function closeMenu() {
 	setTimeout(function() {
 		$("div.x").removeClass("rotate30");
 		$("div.z").removeClass("rotate150");
-	}, 100);
+	}, 50);
 	setTimeout(function() {
 		$("div.y").show();
 		$("div.x, div.y, div.z").removeClass("collapse");
-	}, 180);
+	}, 70);
 }
 
 $(".link").click(function() {
