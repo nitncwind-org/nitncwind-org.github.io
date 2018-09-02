@@ -58,3 +58,6 @@
 		
 	}
 
+$(".link").click(function () {
+	location.href = $(this).attr("url");
+});
