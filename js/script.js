@@ -60,6 +60,6 @@ function closeMenu() {
 
 $(".link").click(function() {
 	console.log("hogehgoehgeo");
-	  // windows.location.href = $(this).attr("href");
-	window.location.href = "http://127.0.0.1:5500/base.html";
+	  windows.location.href = $(this).attr("href");
+	// window.location.href = "http://127.0.0.1:5500/base.html";
 });
