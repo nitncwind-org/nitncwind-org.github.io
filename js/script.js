@@ -51,11 +51,11 @@ function closeMenu() {
 	setTimeout(function() {
 		$("div.x").removeClass("rotate30");
 		$("div.z").removeClass("rotate150");
-	}, 50);
+	}, 100);
 	setTimeout(function() {
 		$("div.y").show();
 		$("div.x, div.y, div.z").removeClass("collapse");
-	}, 70);
+	}, 180);
 }
 
 $(".link").click(function() {
