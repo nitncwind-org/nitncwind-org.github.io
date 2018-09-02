@@ -1,0 +1,331 @@
+* { margin: 0px; padding: 0px; }
+body {
+    background: #f2efe9;
+    width: 100%; 
+    height: 100vh;
+    color: #252627;
+    /* overflow: scroll; */
+    overflow-x: hidden;   /* 横スクロールの禁止 */
+}
+
+p{
+    color: #252627;
+    font-size: 20px;
+}
+#view-code{
+  color:#4183d7; 
+  font-size:13px;
+  text-transform:uppercase;
+  font-weight:700;
+  text-decoration:none;
+  position:absolute;top:640px; left:50%;margin-left:-35px;
+}
+div.menu-screen{
+    width: 100%;
+    height:100%;
+    position:absolute; 
+    background:#f2efe9;
+    overflow-x: hidden;   /* 横スクロールの禁止 */
+}
+
+.list{margin-top:36px; text-align:left;}
+.item{
+    height:115px;
+    margin-top:30px 0;
+    padding-left:5%;
+    padding-right:5%;
+    clear:both;
+    width: 100%;
+}
+.item .img, .item span{background:#AD0E46; border-radius:3px;}
+.item .img{float:left; width:71px; height:71px; margin-left:-93px;}
+.item span{height:5px; width:100%; margin-bottom:19px; float:left;}
+.item span:nth-of-type(3){width:75px; margin-bottom:0;}
+.contents-main{
+    margin-bottom: 200px;   /* footerとの間に余白をあける */
+}
+div.menu-burger {
+    height: 40px; 
+    width: 40px;
+    position: absolute;
+    top: 20px; 
+    right: 15px;
+    cursor: pointer;    
+}
+    div.x,
+    div.y,
+    div.z {
+        position: absolute; margin: auto;
+        top: -22px; bottom: 0px;      
+        background: #252627;
+        border-radius:2px;
+        -webkit-transition: all 200ms ease-out;
+           -moz-transition: all 200ms ease-out;
+            -ms-transition: all 200ms ease-out;
+             -o-transition: all 200ms ease-out;
+                transition: all 200ms ease-out;
+    }       
+    div.x, div.y, div.z { height: 3px; width: 30px; }
+    div.y{top: -5px;}
+    div.z{top: 12px;}
+    div.menu-collapse{
+        top: 20px;
+        background:#AD0E46;
+        -webkit-transition: all 70ms ease-out;
+           -moz-transition: all 70ms ease-out;
+            -ms-transition: all 70ms ease-out;
+             -o-transition: all 70ms ease-out;
+                transition: all 70ms ease-out;
+    }
+     
+    
+    div.rotate30{
+        -ms-transform: rotate(30deg); 
+        -webkit-transform: rotate(30deg); 
+        transform: rotate(30deg);   
+        -webkit-transition: all 50ms ease-out;
+           -moz-transition: all 50ms ease-out;
+            -ms-transition: all 50ms ease-out;
+             -o-transition: all 50ms ease-out;
+                transition: all 50ms ease-out;                  
+    }
+    div.rotate150{
+        -ms-transform: rotate(150deg); 
+        -webkit-transform: rotate(150deg); 
+        transform: rotate(150deg);  
+        -webkit-transition: all 50ms ease-out;
+           -moz-transition: all 50ms ease-out;
+            -ms-transition: all 50ms ease-out;
+             -o-transition: all 50ms ease-out;
+                transition: all 50ms ease-out;                  
+    }
+    
+    div.rotate45{
+        -ms-transform: rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: rotate(45deg);   
+        -webkit-transition: all 100ms ease-out;
+           -moz-transition: all 100ms ease-out;
+            -ms-transition: all 100ms ease-out;
+             -o-transition: all 100ms ease-out;
+                transition: all 100ms ease-out;                 
+    }
+    div.rotate135{
+        -ms-transform: rotate(135deg); 
+        -webkit-transform: rotate(135deg); 
+        transform: rotate(135deg);  
+        -webkit-transition: all 100ms ease-out;
+           -moz-transition: all 100ms ease-out;
+            -ms-transition: all 100ms ease-out;
+             -o-transition: all 100ms ease-out;
+                transition: all 100ms ease-out;                 
+    }
+
+div.menu-navbar{
+    height:73px;
+    /* background:#de3c4b; */
+    border-bottom: 1px solid #252627;  
+    /* opacity: 0.1; */
+}
+
+div.circle{ 
+    border-radius: 50%;
+    width: 0px;
+    height: 0px; 
+    position:absolute;
+    top: 35px;
+    right: 35px;
+    background:#fff;
+    opacity:1;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+       -moz-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+        -ms-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+         -o-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+            transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000); 
+}
+div.circle.expand{
+    width:1200px;
+    height:1200px;
+    top: -560px;
+    right: -565px;   
+    -webkit-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+       -moz-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+        -ms-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+         -o-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+            transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);                 
+    
+}
+div.menu {
+    /* height: 568px;  */
+    width: 320px;
+    position: absolute;
+    top: 0px; right: 0px;
+}
+div.menu ul li {
+    list-style: none;
+    position:absolute;
+    top:50px;;
+    right:0;
+    opacity:0;
+    width:320px;
+    text-align:center;
+    font-size:0px;
+    -webkit-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+       -moz-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+        -ms-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+         -o-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+            transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+}
+div.menu ul li a {
+    color:#AD0E46;
+    text-transform:uppercase;
+    text-decoration:none;   
+    letter-spacing:3px;         
+}
+
+div.menu li.animate{
+    font-size:21px;
+    opacity:1;
+    -webkit-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+       -moz-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+        -ms-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+         -o-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+            transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+}
+div.menu li.animate:nth-of-type(1){ 
+    top:120px;
+    transition-delay: 0.0s; 
+}
+div.menu li.animate:nth-of-type(2){
+    top:190px;
+    transition-delay: 0.03s;    
+            
+}
+div.menu li.animate:nth-of-type(3){
+    top:260px;
+    transition-delay: 0.06s;        
+    
+}
+div.menu li.animate:nth-of-type(4){
+    top:330px;
+    transition-delay: 0.09s;        
+    
+}
+div.menu li.animate:nth-of-type(5){
+    top:400px;
+    transition-delay: 0.12s;        
+    
+}
+div.menu li.animate:nth-of-type(6){
+    top:470px;
+    transition-delay: 0.15s;    
+            
+}
+
+/* カスタム */
+
+/* TOP画像 */
+.img-fluid{
+    width: 800px;
+    max-width: 100%;
+    max-height: 150%;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* タイトルロゴ */
+div.title-logo {
+    /* height: px;  */
+    width: 320px;
+    position: absolute;
+    top: 13px; 
+    left: 10px;
+}
+
+/* Logo画像設定 */
+div.title-logo img{
+    background-size: 100% 100%;
+    width: 250px;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    /* フッターの固定 */
+    position: absolute;    
+    bottom: 0;
+    width: 140%;
+    height: 60px; 
+    line-height: 60px; 
+    background-color: #AD0E46;
+    margin-left: -20%;
+    /* opacity: 0.6; */
+}
+.text-muted{
+    color: #f2efe9;
+}
+
+/* 画像スクロール */
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+/*スライド画像の横幅可変*/
+.slick-img img{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 演奏会情報 */
+.custom-column{
+    width: 100%;
+    margin-top: 25px;
+    background-color: #fffcf7;
+    filter: drop-shadow(0 0 5px #cdcdcd);
+    padding-bottom: 2px;
+}
+.custom-column p{
+    margin-left: 10px;
+}
+.custom-column h3{
+    font-weight: bold;
+    margin-left: 20px;
+    /* border-bottom: solid 1px #AD0E46; */
+}
+.custom-column ul{
+    margin-left: 50px;
+    /* border-bottom: solid 1px #AD0E46; */
+}
+.custom-column li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.custom-column img{
+    text-align: center;
+    max-width: 80%;
+}
+
+/* 文字 */
+.gold{
+    color: #c06e02;
+}
