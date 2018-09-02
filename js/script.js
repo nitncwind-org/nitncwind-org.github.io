@@ -59,5 +59,6 @@
 	}
 
 $(".link").click(function () {
+	console.log("hogehoge");
 	location.href = $(this).attr("url");
 });
